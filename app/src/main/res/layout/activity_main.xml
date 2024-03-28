@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- Username Label -->
+    <TextView
+        android:id="@+id/textViewUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="46dp"/>
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your username"
+        android:layout_toEndOf="@id/textViewUsernameLabel"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/textViewPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:layout_below="@id/textViewUsernameLabel"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:layout_toEndOf="@id/textViewPasswordLabel"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SIGN UP"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
